@@ -1,0 +1,21 @@
+{{- $url := .Get 0 -}}
+{{- if $url -}}
+  {{- /* Wrap the remote request inside the new 'try' block */ -}}
+  {{- with try (resources.GetRemote $url) -}}
+    {{- with .Err -}}
+      <p style="color: #ff4b2b;">⚠️ Failed to load remote content from GitHub: {{ .Message }}</p>
+    {{- else -}}
+      {{- /* .Value holds the successfully fetched resource */ -}}
+      {{- $resource := .Value -}}
+      {{- $lang := path.Ext $url | strings.TrimPrefix "." -}}
+      
+      {{- if eq $lang "md" -}}
+        {{- $resource.Content | markdownify -}}
+      {{- else -}}
+        {{- highlight $resource.Content $lang "" -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    <p style="color: #ff4b2b;">⚠️ Unable to retrieve remote resource.</p>
+  {{- end -}}
+{{- end -}}

@@ -17,3 +17,7 @@ author: Allexio
 
 The only manual action required is editing the load order added by DML.
 A button is available to open it in the user's favourite text editor in the utilities tab.
+
+## Current configuration file
+
+{{< remote-code "https://raw.githubusercontent.com/allexio/nomm/main/default_game_configs/darktide.yaml" >}}
