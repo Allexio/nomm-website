@@ -21,3 +21,17 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
     color: tint-color($primary, 80%) !important;
   }
 }
+
+/* Fixes row alignment and keeps code blocks compact inside tables */
+.compact-table td {
+  vertical-align: middle; /* Centers description text vertically with the code */
+  padding: 8px 12px;     /* Snugs up the row height */
+}
+.compact-table pre, 
+.compact-table .highlight {
+  margin: 0 !important;       /* Removes Hugo's default block margins */
+  padding: 6px 10px !important; /* Keeps code box small and tight */
+  display: inline-block;      /* Prevents the block from stretching full-width */
+  width: 100%;                /* Forces uniform background width */
+  box-sizing: border-box;
+}

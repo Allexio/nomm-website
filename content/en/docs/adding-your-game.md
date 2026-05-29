@@ -4,24 +4,6 @@ description: A quick tutorial on how to create a yaml configuration for a game
 weight: 4
 ---
 
-
-
-<style>
-  /* Fixes row alignment and keeps code blocks compact inside tables */
-  .compact-table td {
-    vertical-align: middle; /* Centers description text vertically with the code */
-    padding: 8px 12px;     /* Snugs up the row height */
-  }
-  .compact-table pre, 
-  .compact-table .highlight {
-    margin: 0 !important;       /* Removes Hugo's default block margins */
-    padding: 6px 10px !important; /* Keeps code box small and tight */
-    display: inline-block;      /* Prevents the block from stretching full-width */
-    width: 100%;                /* Forces uniform background width */
-    box-sizing: border-box;
-  }
-</style>
-
 One of the main ideas behind this project is that games are defined by easy to create config `.yaml` files.
 This means that anyone can create a simple yaml for their game and submit it to the project with little to no coding knowledge and the tool will automate the rest.
 
@@ -83,9 +65,7 @@ For instance, if you would want to add support for Stadew Valley, you would crea
 
 ## Deployment Paths
 
-It is also **required** to define a `mods_path` to which mods should be deployed to
-
-This can be defined in two ways:
+It is also **required** to define a `mods_path` to which mods should be deployed to. This can be defined in two ways:
 
 ### Simple
 
@@ -97,10 +77,10 @@ mods_path: "mods/"
 
 ### Multiple
 
-This is the more complex configuration, where you can add as many paths as you want. This is a list that contains three fields:
+This is the more complex configuration, where you can add as many paths as you want. Each entry in the list is a dictionary that contains three fields:
 - the `path` the mods will be deployed to
 - the `name` that will be displayed to the user
-- the `description` that will help the user choose which path to select<
+- the `description` that will help the user choose which path to select
 
 ```yaml
 mods_path:
@@ -131,3 +111,29 @@ essential-utilities: # this lets you define things such as mod loaders or essent
     enable_command: "sh handle_darktide_mods.sh --enable" # any command that needs to be run (from the root of the game folder) to enable the mod loader
     steam_launch_options: "babla" # any launch option that needs to be added to the game on Steam
 ```
+
+## Full example
+
+Here is a functioning example for the game [Warhammer 40,000: Darktide](https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/):
+
+```yaml
+name: "Warhammer 40,000: Darktide"
+steam_id: 1361210
+mods_path: "mods/"
+
+load_order_path: "mods/mod_load_order.txt"
+
+nexus_id: "warhammer40kdarktide"
+
+essential-utilities:
+  darktide-mod-loader:
+    name: "Darktide Mod Loader"
+    version: 1.5
+    creator: "Talon-d"
+    creator-link: https://github.com/talon-d
+    source: "https://github.com/talon-d/darktideML-4linux/releases/download/1.5/darktideML-4linux1-5.zip"
+    utility_path: ""
+    enable_command: "chmod +x tools/dtkit-patch; sh handle_darktide_mods.sh --enable"
+```
+
+You can find more examples directly in the repo [here](https://github.com/Allexio/nomm/tree/main/default_game_configs).
