@@ -1,12 +1,12 @@
 ---
 title: NOMM
-description: Native Open Mod Manager
+description: A simple & easy way to mod on linux!
 params:
   body_class: td-navbar-links-all-active
 ---
 
 {{% blocks/cover
-  title="NOMM: A simple & easy way to mod on linux!"
+  title="NOMM: Native Open Mod Manager"
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -23,14 +23,21 @@ params:
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-  <a {{% _param btn-lg primary %}} href="docs/">
-    Learn more
+  <a {{% _param btn-lg secondary %}} href="docs/">
+    Read the docs
+    <i class="fa fa-book-open"></i>
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
     target="_blank" rel="noopener noreferrer">
-    Get the code
+    See the code
     {{% _param FA brands github "" %}}
+  </a>
+  <a {{% _param btn-lg primary button-green %}}
+    href="{{% param github_repo %}}/releases/latest/download/nomm.flatpak"
+    target="_blank" rel="noopener noreferrer">
+    Get the app
+    <i class="fa fa-download"></i>
   </a>
 </div>
 
@@ -42,37 +49,54 @@ params:
 
 NOMM provides a simple and modern solution for modding your games on Linux. It has support for over a dozen games, and adding support yourself is super easy (barely an inconvenience)!
 
-No more faffing about trying to make vortex work on your distro, simply install the flatpak, follow the setup instructions and you're good to go!
+No more faffing about trying to make vortex work on your distro, simply install the flatpak, follow the in-app setup and you're good to go!
 
 
 {{% /blocks/lead %}}
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
-
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-
-{{% /blocks/feature %}}
-
 {{% blocks/feature
-  title="Contributions welcome!" icon="fab fa-github"
+  title="Easy Game Support" icon="fa-gamepad"
   url="https://github.com/google/docsy-example"
 %}}
 
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+Support for a game is done via a simple yaml file.<br>Anyone can do it! No dev experience required.
 
 {{% /blocks/feature %}}
 
 {{% blocks/feature
-  title="Follow us on X!" icon="fab fa-x-twitter"
+  title="Multi-platform support" icon="fab fa-steam"
   url="https://x.com/docsydocs"
 %}}
 
-For announcement of latest features etc.
+We have support for Steam,<br>but also GOG and Epic via Heroic!
+
+{{% /blocks/feature %}}
+
+{{% blocks/feature
+  title="Full Nexus integration" icon="fa-cloud-arrow-down"
+  url="https://x.com/docsydocs"
+%}}
+
+NOMM handles download links, update checking,<br>and even metadata updating!
+
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature title="Super Secure" icon="fa-lock" %}}
+
+NOMM is distributed as a flatpak and is designed to only request the<br>minimal amount of access it needs to help you mod your games.
+
+{{% /blocks/feature %}}
+
+{{% blocks/feature
+  title="Intuitive UI" icon="fa-window-maximize"
+  url="https://github.com/google/docsy-example"
+%}}
+
+We don't overwhelm our users with dozens of buttons.<br>
+We prioritise a clean UI/UX so that you don't need a wiki to use the tool.
 
 {{% /blocks/feature %}}
 
