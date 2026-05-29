@@ -1,12 +1,12 @@
 ---
-title: Goldydocs
-description: Porridge temperature assessment &mdash; in the cloud!
+title: NOMM
+description: Native Open Mod Manager
 params:
   body_class: td-navbar-links-all-active
 ---
 
 {{% blocks/cover
-  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
+  title="NOMM: A simple & easy way to mod on linux!"
   height="full td-below-navbar"
   image_anchor="top"
 %}}
@@ -40,12 +40,10 @@ params:
 
 {{% blocks/lead color="white" %}}
 
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+NOMM provides a simple and modern solution for modding your games on Linux. It has support for over a dozen games, and adding support yourself is super easy (barely an inconvenience)!
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+No more faffing about trying to make vortex work on your distro, simply install the flatpak, follow the setup instructions and you're good to go!
+
 
 {{% /blocks/lead %}}
 
