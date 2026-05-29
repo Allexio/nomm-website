@@ -29,6 +29,6 @@ But it boils down to the following:
 
 Once it has found your libraries, NOMM will simply and transparently ask you to execute a command that will give it access to them!
 
-You, the user, will decide whether or not you want NOMM to have access to them.
+You, the user, will decide whether or not you want NOMM to have this access.
 
 We understand if you don't want to share all your libraries with NOMM, so we give you the opportunity to ignore this request at startup.
