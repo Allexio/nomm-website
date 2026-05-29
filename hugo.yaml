@@ -120,9 +120,10 @@ params:
   # Used in the "version-banner" partial to display a version number for the
   # current doc set.
   version: 0.15.0
+  hugo-version: 0.159.0
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/allexio/nomm
+  github_repo: https://github.com/allexio/nomm-website
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
   github_project_repo: https://github.com/allexio/nomm
