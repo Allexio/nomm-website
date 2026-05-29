@@ -1,0 +1,9 @@
+{{- $type := .Get 0 -}}
+{{- $icon := "fa-check" -}}
+{{- $gradient := "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)" -}} {{- if eq $type "no" -}}
+  {{- $icon = "fa-times" -}}
+  {{- $gradient = "linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)" -}} {{- end -}}
+
+<div style="text-align: center; width: 100%;">
+  <i class="fa {{ $icon }}" style="background: {{ $gradient | safeCSS }}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; font-size: 1.2em; font-weight: bold;"></i>
+</div>
