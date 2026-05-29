@@ -84,7 +84,10 @@ NOMM handles download links, update checking,<br>and even metadata updating!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature title="Super Secure" icon="fa-lock" %}}
+{{% blocks/feature
+  title="Super Secure" icon="fa-lock"
+  url="/docs/about/flatpak-security/"
+%}}
 
 NOMM is distributed as a flatpak and is designed to only request the<br>minimal amount of access it needs to help you mod your games.
 
