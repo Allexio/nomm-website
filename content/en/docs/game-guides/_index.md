@@ -1,7 +1,6 @@
 ---
 title: Game Guides
-description: Guides for users, by users.
-categories: [Tutorial]
+description: Guides created by the community to help users mod games.
 weight: 2
 ---
 
