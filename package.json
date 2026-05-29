@@ -1,12 +1,17 @@
 {
-  "name": "docsy-example-site",
-  "version": "0.15.1-dev+001-over-main-01c827ea",
+  "name": "nomm-website",
+  "version": "0.15.1-dev",
   "description": "Example site that uses Docsy theme for technical documentation.",
-  "repository": "github:google/docsy-example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/google/docsy-example.git"
+  },
   "homepage": "https://example.docsy.dev",
   "author": "Docsy Authors",
   "license": "Apache-2.0",
-  "bugs": "https://github.com/google/docsy-example/issues",
+  "bugs": {
+    "url": "https://github.com/google/docsy-example/issues"
+  },
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
   "scripts": {
     "_build": "npm run _hugo-dev --",
@@ -70,5 +75,6 @@
     "proseWrap": "always",
     "singleQuote": true
   },
-  "cSpell:ignore": ""
+  "cSpell:ignore": "",
+  "main": "index.js"
 }
