@@ -9,11 +9,12 @@ params:
   cSpell:ignore: docsy
 ---
 
-Site built with [<span class="badge bg-primary text-bg-primary fs-6">Docsy
-v{{% param version %}} </span>][version]
+Site built with <span class="badge bg-primary text-bg-primary fs-6">Docsy v{{% param version %}} </span>,
+<span class="badge bg-primary text-bg-primary fs-6">Hugo v{{% param hugo-version %}} </span>,
+<span class="badge bg-primary text-bg-primary fs-6">Github Pages</span>
 
-## Build information
+No AI was used in the creation of this site, all its content is written by hand.
 
-{{% td/site-build-info/netlify team="docsy-example" %}}
+Site created and maintained by [Allexio](https://github.com/allexio).
 
-[version]: <https://github.com/google/docsy/releases/v{{% param version %}}>
+List of documentation contributors can be found [here](https://github.com/Allexio/nomm-website/graphs/contributors).
