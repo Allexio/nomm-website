@@ -58,7 +58,7 @@ No more faffing about trying to make vortex work on your distro, simply install 
 
 {{% blocks/feature
   title="Easy Game Support" icon="fa-gamepad"
-  url="https://github.com/google/docsy-example"
+  url="/docs/adding-your-game/"
 %}}
 
 Support for a game is done via a simple yaml file.<br>Anyone can do it! No dev experience required.
@@ -67,7 +67,7 @@ Support for a game is done via a simple yaml file.<br>Anyone can do it! No dev e
 
 {{% blocks/feature
   title="Multi-platform support" icon="fab fa-steam"
-  url="https://x.com/docsydocs"
+  url="/docs/about/game-platforms/"
 %}}
 
 We have support for Steam,<br>but also GOG and Epic via Heroic!
@@ -76,7 +76,7 @@ We have support for Steam,<br>but also GOG and Epic via Heroic!
 
 {{% blocks/feature
   title="Full Nexus integration" icon="fa-cloud-arrow-down"
-  url="https://x.com/docsydocs"
+  url="/docs/about/mod-platforms/"
 %}}
 
 NOMM handles download links, update checking,<br>and even metadata updating!
