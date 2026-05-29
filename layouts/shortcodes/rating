@@ -1,0 +1,12 @@
+{{- $type := .Get 0 -}}
+{{- $gradient := "" -}}
+
+{{- if eq $type "gold" -}}
+  {{- $gradient = "linear-gradient(135deg, #FFE066 0%, #F5B041 50%, #B7950B 100%)" -}}
+{{- else if eq $type "silver" -}}
+  {{- $gradient = "linear-gradient(135deg, #FFFFFF 0%, #B2BABB 50%, #626567 100%)" -}}
+{{- else if eq $type "bronze" -}}
+  {{- $gradient = "linear-gradient(135deg, #EDBB99 0%, #DC7633 50%, #873A5C 100%)" -}}
+{{- end -}}
+
+<i class="fa fa-trophy" style="background: {{ $gradient | safeCSS }}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; font-size: 1.2em;"></i>
