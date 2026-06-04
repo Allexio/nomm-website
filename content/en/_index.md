@@ -28,13 +28,13 @@ params:
     <i class="fa fa-book-open"></i>
   </a>
   <a {{% _param btn-lg secondary %}}
-    href="{{% param github_repo %}}"
+    href="{{% param github_project_repo %}}"
     target="_blank" rel="noopener noreferrer">
     See the code
     {{% _param FA brands github "" %}}
   </a>
   <a {{% _param btn-lg primary button-green %}}
-    href="{{% param github_repo %}}/releases/latest/download/nomm.flatpak"
+    href="{{% param github_project_repo %}}/releases/latest/download/nomm.flatpak"
     target="_blank" rel="noopener noreferrer">
     Get the app
     <i class="fa fa-download"></i>
