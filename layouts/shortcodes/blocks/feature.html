@@ -9,7 +9,7 @@
 <div class="mb-4 h1" {{ $style | safeHTMLAttr }}>
   <i class="{{ if not (or (hasPrefix $icon "fas ") (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>
 </div>
-<h4 class="h3" {{ $style | safeHTMLAttr }}>
+<h4 class="h3, text-white" {{ $style | safeHTMLAttr }}>
   {{- .Get "title" | markdownify -}}
 </h4>
 <div class="mb-0">
