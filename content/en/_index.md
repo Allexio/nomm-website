@@ -93,7 +93,7 @@ NOMM is distributed as a flatpak and is designed to only request the<br>minimal 
 
 {{% blocks/feature
   title="Intuitive UI" icon="fa-window-maximize"
-  url="https://github.com/google/docsy-example"
+  url="/docs/quick-setup"
   color="#ea5792"
 %}}
 
