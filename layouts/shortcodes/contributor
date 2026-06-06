@@ -1,0 +1,22 @@
+{{- $name := .Get "name" -}}
+{{- $role := .Get "role" | default "" -}}
+{{- $avatar := .Get "avatar" | default "https://github.com/github.png" -}}
+{{- $bg := .Get "bg" | default "#eab473" -}}
+
+<div class="row align-items-center mb-5 p-4 rounded-5 shadow-sm" style="background-color: {{ $bg }}; color: white;">
+  <div class="col-12 col-md-2 text-center text-md-start mb-3 mb-md-0">
+    <img src="{{ $avatar }}" 
+         class="rounded-circle img-fluid border border-3 border-light" 
+         style="width: 120px; height: 120px; object-fit: cover;" 
+         alt="{{ $name }} Profile">
+  </div>
+  <div class="col-12 col-md-10 ps-md-0">
+    <h3 class="mb-1 text-white">{{ $name }}</h3>
+    {{ with $role -}}
+      <p class="text-white-50 small mb-2">{{ . }}</p>
+    {{- end }}
+    <div class="mb-0 text-white">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>
