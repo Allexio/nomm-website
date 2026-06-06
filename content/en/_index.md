@@ -11,12 +11,6 @@ params:
   image_anchor="top"
 %}}
 
-<!--
-  Want a cover without an image?
-  Add the following argument to the blocks/cover shortcode:
-    color="primary bg-gradient td-below-navbar"
--->
-
 <!-- prettier-ignore -->
 {{% _param description %}}
 {.display-6}
@@ -59,6 +53,7 @@ No more faffing about trying to make vortex work on your distro, simply install 
 {{% blocks/feature
   title="Easy Game Support" icon="fa-gamepad"
   url="/docs/adding-your-game/"
+  color="#56cc6d"
 %}}
 
 Support for a game is done via a simple yaml file.<br>Anyone can do it! No dev experience required.
@@ -68,6 +63,7 @@ Support for a game is done via a simple yaml file.<br>Anyone can do it! No dev e
 {{% blocks/feature
   title="Multi-platform support" icon="fab fa-steam"
   url="/docs/about/game-platforms/"
+  color="#c98848"
 %}}
 
 We have support for Steam,<br>but also GOG and Epic via Heroic!
@@ -77,6 +73,7 @@ We have support for Steam,<br>but also GOG and Epic via Heroic!
 {{% blocks/feature
   title="Full Nexus integration" icon="fa-cloud-arrow-down"
   url="/docs/about/mod-platforms/"
+  color="#ea5792"
 %}}
 
 NOMM handles download links, update checking,<br>and even metadata updating!
@@ -87,6 +84,7 @@ NOMM handles download links, update checking,<br>and even metadata updating!
 {{% blocks/feature
   title="Super Secure" icon="fa-lock"
   url="/docs/about/flatpak-security/"
+  color="#ead86e"
 %}}
 
 NOMM is distributed as a flatpak and is designed to only request the<br>minimal amount of access it needs to help you mod your games.
@@ -96,6 +94,7 @@ NOMM is distributed as a flatpak and is designed to only request the<br>minimal 
 {{% blocks/feature
   title="Intuitive UI" icon="fa-window-maximize"
   url="https://github.com/google/docsy-example"
+  color="#ea5792"
 %}}
 
 We don't overwhelm our users with dozens of buttons.<br>
@@ -103,16 +102,15 @@ We prioritise a clean UI/UX so that you don't need a wiki to use the tool.
 
 {{% /blocks/feature %}}
 
-{{% /blocks/section %}}
+{{% blocks/feature
+  title="Strong values" icon="fa-trophy"
+  url="https://github.com/google/docsy-example"
+  color="#56cc6d"
+%}}
 
-{{% blocks/section color="white" type="row text-center h1" %}}
+NOMM will always be open and free<br>
+We also value transparency when it comes to AI use
 
-This is the second section
-
-{{% /blocks/section %}}
-
-{{% blocks/section color="secondary" type="row text-center h1" %}}
-
-This is the another section with center alignment
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
