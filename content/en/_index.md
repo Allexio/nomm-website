@@ -104,7 +104,7 @@ We prioritise a clean UI/UX so that you don't need a wiki to use the tool.
 
 {{% blocks/feature
   title="Strong values" icon="fa-trophy"
-  url="https://github.com/google/docsy-example"
+  url="/docs/about/values"
   color="#56cc6d"
 %}}
 
