@@ -20,8 +20,8 @@
         <!-- drop shadow for sprinkles -->
         <defs>
                 <filter id="sprinkleShadow" x="-20%" y="-20%" width="140%" height="140%">
-                        <!-- dx="0" dy="2" moves the shadow down by 5px -->
-                        <!-- stdDeviation="0.5" adds a tiny bit of blur -->
+                        <!-- dx="2" dy="2" moves the shadow -->
+                        <!-- stdDeviation adds blur -->
                         <feDropShadow dx="2" dy="2" stdDeviation="0.5" flood-color="#1f7eb1"/>
                 </filter>
         </defs>
