@@ -22,10 +22,11 @@ Each game is given a "Support Rating" similar to protonDB's, that represents how
 
 This section is maintained by [NOMM community volunteers](https://github.com/Allexio/nomm-website/graphs/contributors), who have spent time working to help bring you easy to understand guides.
 
-## Can't find your game?
-
-If you see your game is missing from the list, please don't hesitate to add support for it by checking otu the intructions [here](/docs/adding-your-game)
 
 ## List of currently supported games
 
 {{< game-list >}}
+
+## Can't find your game?
+
+If you see your game is missing from the list, please don't hesitate to add support for it by checking out the intructions [here](/docs/adding-your-game)
