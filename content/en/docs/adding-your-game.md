@@ -65,6 +65,12 @@ For instance, if you would want to add support for Stadew Valley, you would crea
       <td>{{< highlight yaml >}}accent_colour: "#ac1a24"{{< /highlight >}}</td>
       <td></td>
     </tr>
+    <tr>
+      <td><code>wiki_link</code></td>
+      <td>The id of the wiki page on this repo</td>
+      <td>{{< highlight yaml >}}wiki_link: "witcher-3"{{< /highlight >}}</td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 
