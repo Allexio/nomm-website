@@ -6,8 +6,8 @@ menu: { main: { weight: 20 } }
 
 Hi and welcome to the NOMM documentation hub!
 
-> [NOTE!]
-> Please keep in mind that NOMM is very much in development. Things **WILL** break. Things will be wonky. Things might not work as expected. We're doing our best to limit those instances as much as we can, but we are a very small team (basically two developers right now) and these things take time.
+> [!NOTE] Development status
+> Please keep in mind that NOMM is very much still in development. Things **WILL** break. Things will be wonky. Things might not work as expected. We're doing our best to limit those instances as much as we can, but we are a very small team (basically two developers right now) and these things take time.
 > 
 > If you have an issue, please [report it](https://github.com/Allexio/nomm/issues) and we will get to it as soon as we can. If you want to help us, be as detailed as you possibly can in your ticket.
 
