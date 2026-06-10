@@ -2,6 +2,8 @@
 title: Game Guides
 description: Guides created by the community to help users mod games.
 weight: 3
+cascade:
+  - hide_summary: true
 ---
 
 Information in this section is meant to help users mod games and inform them as to what NOMM can or cannot do for each one.
@@ -25,3 +27,5 @@ This section is maintained by [NOMM community volunteers](https://github.com/All
 If you see your game is missing from the list, please don't hesitate to add support for it by checking otu the intructions [here](/docs/adding-your-game)
 
 ## List of currently supported games
+
+{{< game-list >}}
