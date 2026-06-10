@@ -31,7 +31,7 @@ For instance, if you would want to add support for Stadew Valley, you would crea
     </tr>
     <tr>
       <td><code>steam_id</code></td>
-      <td>The Steam App ID. Can be found via <a href="[https://steamdb.info/](https://steamdb.info/)">SteamDB</a> or in the game's store page URL.</td>
+      <td>The Steam App ID. Can be found via <a href="https://steamdb.info/">SteamDB</a> or in the game's store page URL.</td>
       <td>{{< highlight yaml >}}steam_id: 2417610{{< /highlight >}}</td>
       <td></td>
     </tr>
@@ -59,8 +59,16 @@ For instance, if you would want to add support for Stadew Valley, you would crea
       <td>{{< highlight yaml >}}load_order_path: mods/mod_load_order.txt{{< /highlight >}}</td>
       <td></td>
     </tr>
+    <tr>
+      <td><code>accent_colour</code></td>
+      <td>The accent colour that will replace the primary colour when modding this game, if the <a href="/docs/nomm-guides/launcher-presentation/#options">per-game-accent-colours option</a> is enabled. Please provide a value in <a href="https://share.google/1ZhUzlpT78MaAFCxk">hex format</a>.</td>
+      <td>{{< highlight yaml >}}accent_colour: "#ac1a24"{{< /highlight >}}</td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+
 
 
 ## Deployment Paths
