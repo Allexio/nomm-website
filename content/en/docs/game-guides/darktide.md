@@ -1,7 +1,6 @@
 ---
 title: "Warhammer 40,000: Darktide"
 date: 2026-05-29
-description: "A guide on how to mod Warhammer 40,000: Darktide with NOMM"
 author: Allexio
 rating: gold
 ---
@@ -16,8 +15,26 @@ rating: gold
 
 ## Manual actions required
 
+### Summary 
+
 The only manual action required is editing the load order added by DML.
+
 A button is available to open it in the user's favourite text editor in the utilities tab.
+
+### Details
+
+To install mods on Warhammer 40K Darktide, you need to install a utility called "Darktide Mod Loader".
+On NOMM, this can be done directly via the utilities tab, simply click the download and install buttons.
+
+After this, you will be able to download all of your mods through a supported modding platform.
+
+Once you are done downloading, installing, and enabling all the mods, you will have to edit the load order text file.
+
+To do so, simply go on the utilities tab and click the "Edit Load Order" button.
+
+The instructions should be displayed in the file itself, but basically you need to write the name of the mods on each line.
+
+If you do not do this, your mods will not be enabled.
 
 ## Current configuration file
 
