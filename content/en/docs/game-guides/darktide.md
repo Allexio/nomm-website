@@ -3,9 +3,10 @@ title: "Warhammer 40,000: Darktide"
 date: 2026-05-29
 description: "A guide on how to mod Warhammer 40,000: Darktide with NOMM"
 author: Allexio
+rating: gold
 ---
 
-<span style="font-size: 24px;">{{< rating "gold" >}}</span> <i class="fab fa-steam" style="font-size: 28px;"></i>
+<span style="font-size: 24px;">{{< rating >}}</span> <i class="fab fa-steam" style="font-size: 28px;"></i>
 
 ## Frameworks / utilities supported
 

@@ -1,11 +1,12 @@
 {{- $type := .Get 0 -}}
 {{- $gradient := "" -}}
+{{- $rating := .Get 0 | default .Page.Params.rating -}}
 
-{{- if eq $type "gold" -}}
+{{- if eq $rating "gold" -}}
   {{- $gradient = "linear-gradient(135deg, #FFE066 0%, #F5B041 50%, #B7950B 100%)" -}}
-{{- else if eq $type "silver" -}}
+{{- else if eq $rating "silver" -}}
   {{- $gradient = "linear-gradient(135deg, #FFFFFF 0%, #B2BABB 50%, #626567 100%)" -}}
-{{- else if eq $type "bronze" -}}
+{{- else if eq $rating "bronze" -}}
   {{- $gradient = "linear-gradient(135deg, #EDBB99 0%, #DC7633 50%, #873A5C 100%)" -}}
 {{- end -}}
 
