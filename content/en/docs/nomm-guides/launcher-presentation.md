@@ -83,6 +83,6 @@ This will:
 - Force NOMM to un-ignore previously ignored libraries
 - Force NOMM to syncronise the configuration files with the versions included in the release
 
-> [NOTE!]
+> [!NOTE] Custom YAML modifications
 > If you have done any modifications to your yaml configuration files on files that were already included in the release, these changes **will** get overwritten when forcing a rescan.
 
