@@ -1,5 +1,6 @@
 ---
 title: NOMM Guides
+description: A user guide on how to use NOMM
 linkTitle: NOMM Guides
 weight: 2
 ---
