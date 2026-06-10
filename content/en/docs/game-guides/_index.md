@@ -1,7 +1,7 @@
 ---
 title: Game Guides
 description: Guides created by the community to help users mod games.
-weight: 2
+weight: 3
 ---
 
 Information in this section is meant to help users mod games and inform them as to what NOMM can or cannot do for each one.
