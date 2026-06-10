@@ -120,3 +120,38 @@ After having modified the mod IDs of the mods you want to link, you have to [ref
 ## The downloads tab
 
 The downloads tab is designed to handle the downloaded mods (i.e. the archives).
+
+<image src=/assets/nomm-screenshots/downloads-tab.png alt="A screenshot showcasing the downloads tab">
+
+The downloads tab is a lot more straightforward than the mods tab.
+
+There is no preview pane, and very limited information on the mods displayed.
+
+Let's look at a row again:
+
+<image src=/assets/nomm-screenshots/downloads-tab-list-row.png alt="A screenshot showcasing a row in the downloads tab list">
+
+On the left we have:
+- As a title, the name of the mod (if the mod was downloaded via NOMM)
+- As a subtitle, the name of the file
+
+On the right we have:
+- The version of the downloaded mod
+- The downloaded date (<i class="fa fa-download"></i>)
+- The installed date (<i class="fa fa-box"></i>)
+- The "Install" button (replaced by the "Reinstall" button when the mod is already installed)
+- A bin (<i class="fa fa-trash"></i>) button to remove a mod archive from the downloads folder. This **does not** disable the mod or remove it from the staging folder, it only deletes the downloaded archive file. It will still be possible to enable/disable the mod from the [mods tab](/docs/nomm-guides/dashboard-presentation#the-mods-tab).
+
+### Installing/reinstalling a mod
+
+When you click the "install" button on a row of the downloads tab, the respective mod's contents will be extracted from its archive to the game's folder in the staging folder.
+
+If the game is configured to have [multiple mod paths](/docs/adding-your-game#multiple), you will have to choose where to deploy the mod to.
+
+**Reinstalling** a mod does the same exact thing, simply overwriting the previous version that was installed.
+
+## The utilities tab
+
+The utilities tab is still going to see some extensive development, but basically currently it is a place where specific tools to help mod that game can be found, downloaded, and installed. Think special tools that are necesary to mod a game, like a mod framework such as SKSE for Skyrim.
+
+It will very likely see a major touch up (or maybe even be replaced by something completely different) in the next major release.
