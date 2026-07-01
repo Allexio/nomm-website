@@ -16,13 +16,13 @@ weight: 10
 
 ## Support
 
-| Feature | Steam | GOG* | Epic Games*
-| :--- | :---: | :---: | :---: |
-| Mod Games | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
-| Library auto-detection | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
-| Launch games from NOMM | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
-| Support for out-of-game paths | {{< supported "yes" >}} | {{< supported "no" >}} | {{< supported "no" >}} |
-| Change launch options | {{< supported "yes" >}} | {{< supported "no" >}} | {{< supported "no" >}} |
+| Feature | Steam | GOG* | Epic Games* | Ryubing (Switch Emulator) |
+| :--- | :---: | :---: | :---: | :---: |
+| Mod Games | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
+| Library auto-detection | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
+| Launch games from NOMM | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "no" >}} |
+| Support for out-of-game paths | {{< supported "yes" >}} | {{< supported "no" >}} | {{< supported "no" >}} | N/A |
+| Change launch options | {{< supported "yes" >}} | {{< supported "no" >}} | {{< supported "no" >}} | N/A |
 
 
 > [!NOTE]
