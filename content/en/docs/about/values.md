@@ -26,6 +26,8 @@ Now that we have two developers contributing, all code submissions go through Pu
 
 AI was also used to generate the logo of the app. Said logo was generated as a `.png` and then transformed to an `.svg` by a non-AI tool and then heavily manually edited to obtain the logo visible on the website today.
 
+This logo is temporary and will be replaced if a community member proposes their services to produce a new one (I have neither the skills to make a logo myself, nor the money to hire someone to do it - please remember this is a hobby project, I do not make any money from this)
+
 ## Privacy
 
 NOMM does not have any telemetry, nor does it "phone home" or communicate with any other third party service (other than obtaining information from your platform configuration files, duh).
