@@ -126,12 +126,12 @@ essential-utilities: # this lets you define things such as mod loaders or essent
     install_in_game_files: true # whether to copy the utility's files into the game folder at all - optional, defaults to true
     enable_command: "sh handle_darktide_mods.sh --enable" # any command that needs to be run (from the root of the game folder) to enable the mod loader
     game_launch_options: "WINEDLLOVERRIDES='UE4SS=n,b' %command%" # extra Steam launch options to merge in alongside the game's normal launch, chained through %command%
-    utility_launch_command: "me3 launch -p my-profile" # a command that fully REPLACES the game's Steam launch command, for tools that launch the modded game themselves
+    utility_launch_command: "me3 launch -p my-profile" # a command that launches the modded game directly - Nomm runs this itself instead of the game's normal launch
 ```
 
-`game_launch_options` and `utility_launch_command` both end up in the same place (the game's Steam launch options), but they mean different things and a utility should only ever need one of them:
-- Use `game_launch_options` when the utility just needs some extra options set *before* the game launches normally - for example, forcing a `WINEDLLOVERRIDES` value so a DLL-based mod loader gets picked up. Nomm merges this in alongside anything you've already set yourself, chaining through Steam's `%command%` placeholder.
-- Use `utility_launch_command` when the utility *is* the launcher - a tool that finds and starts the modded game itself, such as [me3](https://github.com/garyttierney/me3) for FROMSOFTWARE games. Nomm replaces the game's Steam launch command with this instead of adding to it.
+`game_launch_options` and `utility_launch_command` mean very different things, and a utility should only ever need one of them:
+- Use `game_launch_options` when the utility just needs some extra options set *before* the game launches normally - for example, forcing a `WINEDLLOVERRIDES` value so a DLL-based mod loader gets picked up. Nomm merges this into the game's Steam launch options, alongside anything you've already set yourself, chaining through Steam's `%command%` placeholder.
+- Use `utility_launch_command` when the utility *is* the launcher - a tool that finds and starts the modded game itself, such as [me3](https://github.com/garyttierney/me3) for FROMSOFTWARE games. This never touches Steam's launch options at all - once the utility is installed, Nomm runs this command directly itself, both from a Play button next to the utility on the Tools tab and from the game's own Launch button, so there's no need to relaunch Steam whenever you add or change one of these utilities.
 
 ## Full example
 
@@ -175,6 +175,7 @@ essential-utilities:
     source: 'https://github.com/garyttierney/me3/releases/download/v0.11.0/installer.sh'
     is_single_file: true
     install_in_game_files: false
+    enable_command: "sh installer.sh"
     utility_launch_command: "$HOME/.local/bin/me3 launch -p eldenring-default"
 ```
 
