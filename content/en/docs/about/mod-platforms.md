@@ -15,9 +15,9 @@ weight: 10
 
 ## Support
 
-| Feature | Nexus Mods |
-| :--- | :---: |
-| Mod Downloads | {{< supported "yes" >}} |
-| Collection Downloads | {{< supported "yes" >}} |
-| Check for updates | {{< supported "yes" >}} |
-| Metadata refresh | {{< supported "yes" >}} |
+| Feature | Nexus Mods | GameBanana
+| :--- | :---: | :---: |
+| Mod Downloads | {{< supported "yes" >}} | {{< supported "yes" >}}
+| Collection Downloads | {{< supported "yes" >}} | {{< supported "no" >}} |
+| Check for updates | {{< supported "yes" >}} | {{< supported "no" >}} |
+| Metadata refresh | {{< supported "yes" >}} | {{< supported "yes" >}} |
