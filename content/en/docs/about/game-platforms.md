@@ -16,7 +16,7 @@ weight: 10
 
 ## Support
 
-| Feature | Steam | GOG* | Epic Games* | Ryubing (Switch Emulator) |
+| Feature | Steam | GOG* | Epic Games* | Ryubing/Eden/Citron |
 | :--- | :---: | :---: | :---: | :---: |
 | Mod Games | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
 | Library auto-detection | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} | {{< supported "yes" >}} |
