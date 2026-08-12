@@ -7,7 +7,7 @@ params:
 
 {{% blocks/cover
   title="NOMM: Native Open Mod Manager"
-  height="full td-below-navbar"
+  height="med td-below-navbar"
   image_anchor="top"
 %}}
 
